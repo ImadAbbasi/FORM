@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" action="/" name="myForm" onsubmit="return validateForm()" method="post">
+            <h1>Submit Form</h1>
+            <div class="formdesign" id="name">
+                <label for="fname">Name:</label>
+                <input id="fname" type="text" name="fname"><span class="formerror"></span>
+            </div>
+
+            <div class="formdesign" id="email">
+                <label for="femail">Email:</label>
+                <input id="femail" type="email" name="femail"><span class="formerror"></span>
+            </div>
+
+            <div class="formdesign" id="pass">
+                <label for="fpass">Password:</label>
+                <input id="fpass" type="password" name="fpass"><span class="formerror"></span>
+            </div>
+
+            <div class="formdesign" id="cpass">
+                <label for="fcpass">Confirm Password:</label>
+                <input id="fcpass" type="password" name="fcpass"><span class="formerror"></span>
+            </div>
+
+            <div class="formdesign" id="phone">
+                <label for="fphone">Phone:</label>
+                <input id="fphone" type="phone" name="fphone"><span class="formerror"></span>
+            </div>
+
+            <input class="btn" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
